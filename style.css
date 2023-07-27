@@ -1,0 +1,575 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+/************ NAVIGATION  SECTION *****************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: rgb(251, 252, 254);
+}
+.nav-cta:link,
+.nav-cta:visited {
+  background-color: #e67e22;
+
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+}
+.nav-cta:hover,
+.nav-cta:active {
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  display: inline-block;
+}
+/*****************************/
+.section-hero {
+  /*  background-color: #f8ceaa;
+    */
+  background-color: #fadac0;
+  padding: 9.6rem 8.6rem;
+}
+.hero {
+  max-width: 130rem;
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.fade-in {
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/************  HEADER *****************/
+.logo {
+  height:6.4rem;
+}
+.logo-img {
+  height:100px;;
+  width: 100%;
+  gap:1.2rem;
+}
+.donate-icon{
+color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fadac0;
+  height: 9.6rem;
+
+  padding: 0 4.8rem;
+}
+
+/************ FEATURED   SECTION *****************/
+.section-featured {
+  padding: 4.8rem 0;
+}
+
+.heading-featured-in {
+  color: #0e0e0e;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.logos {
+  display: flex;
+}
+.logo img {
+  height: 4rem;
+  justify-content: space-between;
+}
+
+/************  SECTION-GRID How it work section  *****************/
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: rgb(240, 236, 234);
+}
+/* .section-how div:nth-child(1){
+  background-color: aqua;
+}
+.section-how div:nth-child(2){
+  background-color:blue;
+}
+.section-how div:nth-child(3){
+  background-color:  violet;
+}
+.section-how div:nth-child(4){
+  background-color: red;
+}
+ */
+
+/* .section-how div div{
+  padding: 100px;
+  font-size: 50px;
+background-color: #555;
+}
+ */
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 700;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.step-img {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+/*.step-img-box::before{
+  content:"";
+display: block;
+width: 60%;
+
+background-color: #eabb93;
+/* height: 60%; */
+/* NICE TRICK- FOR MAKING CIRCLE ,IF WE DONT KNOW THE HEIGHT -->THEN ADDING PADDING TO BOTTOM*/
+/*position: absolute;
+padding-bottom: 60%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+ }*/
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/************* NEED TO ADD STEP-BOX-BACKGROUND****************/
+
+/************  MEALS SECTION  *****************/
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal{
+  /* box-shadow: 0 2.4rem 4.8rem rgba(183, 97, 97, 0.075); */
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+
+  border-radius: 12px;
+  overflow: hidden;
+
+}
+.meal-content{
+  padding:3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-tags{
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.tag{
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  
+color: #0e0e0e;
+border-radius: 100px;
+font-weight: 700;
+}
+.tag--01{
+background-color: #51cf66;
+}
+.tag--02{
+ background-color:#cf7051
+}
+.tag--03{
+  background-color:#51bccf
+}
+.meal-icon {
+  color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+/************ CALL TO ACTION(CTA) SECTION  *****************/
+
+.section-cta{
+  padding: 9.6rem 0;
+}
+ /*.cta{
+  display: flex;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  height: 100px; */
+  /* box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+  
+  
+  min-height: 200px;
+  
+  margin: 100px auto;
+  background:  #e67e22;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg ,rgb(242, 46, 46), #d73a05 , #e67e22);
+}
+*/
+
+/* for form section  */
+.section-form
+ {
+  margin: 0; padding: 0;
+  background: #ecf1f4; font-family: sans-serif;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+
+  border-radius: 12px;
+  overflow: hidden;
+ }
+   
+.form-wrap{ 
+  width:700px; 
+linear-gradient:#e62922 ,#e67e22;
+  background-color:#e67e22; 
+  padding: 40px 20px; 
+  box-sizing: border-box; 
+ border-radius: 11px;
+  position: relative;
+
+   left: 50%; top: 50%; 
+   transform: translate(-50%, -50%);
+   margin-bottom: 6.4rem;
+  }
+/*        
+h1{
+  text-align: center; color: #fff; font-weight: normal; margin-bottom: 20px;}
+         */
+ input{
+  width: 100%; background: none; border: 1px solid #fff;
+  height:4.8rem;
+   border-radius: 10px; 
+   padding: 6px 15px;
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+     font-size: 16px; color: #fff;
+    }
+        
+        
+  
+  input[type="button"]{ 
+    background: #f6f2f0; border: 0; cursor: pointer;
+     color: #3e3d3d;}
+input[type="button"]:hover{ 
+  background: #e44343; transition: .6s;}
+        
+        ::placeholder{
+          color: #f7f7f7;}
+
+    /* *******************FOOTER SECTION*********************** */
+
+    /* .section-footer{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+   
+      align-items: center;
+      background-color:#e67e22;
+      bottom: 0;
+      color: #FCF8E8;
+      display: flex;
+      font-size: 2.5em;
+      height: 300px;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      z-index: 1;
+    
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #cfd2d6;
+    }
+  footer{
+    position: absolute;
+    bottom: 0;
+    background: black;
+    height: auto;
+    width: 100vw;
+    padding: 40px 0 0 0;
+  }
+  /*content*/
+  /*
+  .footer-list{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center;
+    
+    text-align: center; 
+  }
+  .footer-para{
+      /* margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+  }
+  /*social -media
+  .socials{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+      margin: 10px;
+  }
+  .socials a{
+      text-decoration: none;
+      color: #fff;
+      border: 1.1px solid white;
+      padding: 5px;
+      border-radius: 50%;
+  }
+  .socials a i{
+      font-size: 1.1rem;
+      width: 20px;
+      transition: color .4s ease;
+  }
+  .socials a:hover i{
+      color: dodgerblue;
+  }
+  /* copyright
+  .footer-copyright{
+      
+      width: 100vw;
+      padding: 20px 20px 50px 20px;
+  }
+  .footer-copyright p{
+      font-size: 14px;
+      word-spacing: 2px;
+      
+  }
+   */
+
+   footer {
+    background-color: #ba1c1c;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ 
+    align-items: center;
+    background-color:#e67e22;
+    bottom: 0;
+    color: #FCF8E8;
+    display: flex;
+    font-size: 2.5em;
+    height: 200px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+  
+  .social-media a {
+    color: #555555;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .social-media i {
+    font-size: 20px;
+  }
+  
+  .footer-icon{
+    color: #fcf8f5;
+  height: 5.4rem;
+  width: 2.4rem;
+  }
+  
+/* ***********  MODAL WINDOW *********** * */
+   
+.modal-window {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+} 
+
+body.modal-open {
+  filter: blur(5px);
+}
+
+
+/**************MODAL PART***************/
+
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
